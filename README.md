@@ -17,13 +17,14 @@ inspirations Bob l'éponge TV shows et Bob the robber game
 
 ### Choix des médias visuels
 * flat design
+![platformer_art_candy](https://kenney.nl/media/pages/assets/platformer-art-candy/734098e2ef-1677696332/preview.png)
 
 
 ### Choix des médias sonores
 * cute sound effect
 * comfy et lofi background music
-* sound collecting coins
-* sound hitting object
-* character noise
+* son ramasser sous
+* son frapper objet
+* son personalisé personnage
 
 
