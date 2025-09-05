@@ -11,6 +11,6 @@ config_version=5
 [application]
 
 config/name="godot-patisserie-tp1"
-run/main_scene="res://scene_principale.tscn"
+run/main_scene="uid://cfl4smoxxf12r"
 config/features=PackedStringArray("4.4", "Forward Plus")
-config/icon="res://icon.svg"
+config/icon="res://assets/icon.svg"

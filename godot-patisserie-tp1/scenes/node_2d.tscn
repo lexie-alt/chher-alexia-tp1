@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://tiiy6w7jvukd"]
+
+[ext_resource type="PackedScene" uid="uid://dc7vt56b363oc" path="res://scenes/personnage.tscn" id="1_6e84v"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Personnage" parent="." instance=ExtResource("1_6e84v")]
+position = Vector2(64, -11)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+scale = Vector2(-20.3112, 7.12782)

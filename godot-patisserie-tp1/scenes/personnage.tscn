@@ -1,0 +1,62 @@
+[gd_scene load_steps=9 format=3 uid="uid://dc7vt56b363oc"]
+
+[ext_resource type="Script" uid="uid://ce73wc2b0a8rp" path="res://scenes/personnage.gd" id="1_kmy4e"]
+[ext_resource type="Texture2D" uid="uid://bspvup3l70pkx" path="res://assets/female_tilesheet.png" id="2_vv0fa"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j5wjh"]
+atlas = ExtResource("2_vv0fa")
+region = Rect2(0, 0, 80, 110)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lyp4m"]
+atlas = ExtResource("2_vv0fa")
+region = Rect2(560, 110, 80, 110)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0xj37"]
+atlas = ExtResource("2_vv0fa")
+region = Rect2(0, 110, 80, 110)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_frgl3"]
+atlas = ExtResource("2_vv0fa")
+region = Rect2(80, 110, 80, 110)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_lc2xo"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j5wjh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lyp4m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0xj37")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_frgl3")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 10.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_1d37e"]
+radius = 26.0
+height = 90.0
+
+[node name="Personnage" type="Node2D"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+position = Vector2(-48, -641)
+script = ExtResource("1_kmy4e")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
+position = Vector2(46, 587)
+rotation = -0.00652483
+sprite_frames = SubResource("SpriteFrames_lc2xo")
+animation = &"walk"
+autoplay = "walk"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(46, 600)
+shape = SubResource("CapsuleShape2D_1d37e")
+one_way_collision = true
