@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bspvup3l70pkx"
-path="res://.godot/imported/female_tilesheet.png-c57822b0febb669df5fb57897539105a.ctex"
+uid="uid://cm0lyeeethr8p"
+path="res://.godot/imported/SampleA.png-a39853588e20e4f97836e74a54e0e84c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/female_tilesheet.png"
-dest_files=["res://.godot/imported/female_tilesheet.png-c57822b0febb669df5fb57897539105a.ctex"]
+source_file="res://assets/model/SampleA.png"
+dest_files=["res://.godot/imported/SampleA.png-a39853588e20e4f97836e74a54e0e84c.ctex"]
 
 [params]
 
