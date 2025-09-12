@@ -21,8 +21,8 @@ corner_radius_top_right = 20
 corner_radius_bottom_right = 20
 corner_radius_bottom_left = 20
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vue75"]
-bg_color = Color(0.568627, 0.180392, 0.756863, 1)
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wu84c"]
+bg_color = Color(0.658367, 0.573216, 0.612833, 1)
 corner_radius_top_left = 20
 corner_radius_top_right = 20
 corner_radius_bottom_right = 20
@@ -70,7 +70,7 @@ theme_override_fonts/font = ExtResource("2_ekxnf")
 theme_override_font_sizes/font_size = 70
 theme_override_styles/hover = SubResource("StyleBoxFlat_bqqt6")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_ekxnf")
-theme_override_styles/normal = SubResource("StyleBoxFlat_vue75")
+theme_override_styles/normal = SubResource("StyleBoxFlat_wu84c")
 text = "Jouer"
 
 [node name="Options" type="Button" parent="VBoxContainer"]
@@ -78,27 +78,24 @@ layout_mode = 2
 theme_override_fonts/font = ExtResource("2_ekxnf")
 theme_override_font_sizes/font_size = 70
 theme_override_styles/hover = SubResource("StyleBoxFlat_bqqt6")
-theme_override_styles/normal = SubResource("StyleBoxFlat_vue75")
+theme_override_styles/normal = SubResource("StyleBoxFlat_wu84c")
 text = "Options"
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 1
-anchors_preset = 14
-anchor_top = 0.5
-anchor_right = 1.0
-anchor_bottom = 0.5
-offset_left = -2.0
-offset_top = -230.0
-offset_right = -2.0
-offset_bottom = -21.0
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -565.0
+offset_top = 112.0
+offset_right = 581.0
+offset_bottom = 284.0
 grow_horizontal = 2
-grow_vertical = 2
-theme_override_colors/font_color = Color(1, 1, 0.745098, 1)
+theme_override_colors/font_color = Color(0.976739, 0.436462, 0.564532, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("2_ekxnf")
-theme_override_font_sizes/font_size = 170
-text = "DESSERTS TP1 "
+theme_override_font_sizes/font_size = 120
+text = "Desserted Island"
 horizontal_alignment = 1
 
 [node name="Confirmation003" type="AudioStreamPlayer" parent="."]
