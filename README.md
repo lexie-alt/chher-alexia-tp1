@@ -1,5 +1,5 @@
 # chher-alexia-tp1
-Interativite ludique 582-301MO TP1 scene interactive
+Interactivite ludique 582-301MO TP1 scene interactive
 
 ## Thématique de la scène interactive
 gourmandises et sucreries
