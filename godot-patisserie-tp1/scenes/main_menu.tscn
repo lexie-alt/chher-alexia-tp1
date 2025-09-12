@@ -1,7 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://cvt1l1kps53hn"]
+[gd_scene load_steps=9 format=3 uid="uid://cvt1l1kps53hn"]
 
+[ext_resource type="Script" uid="uid://errjdhejplqr" path="res://scripts/main_menu.gd" id="1_bqqt6"]
 [ext_resource type="Texture2D" uid="uid://cl07x66djqnf" path="res://assets/model/Sample.png" id="1_l6cm7"]
 [ext_resource type="FontFile" uid="uid://biphkk4rlwb3w" path="res://assets/typos/Super Kindly.ttf" id="2_ekxnf"]
+[ext_resource type="AudioStream" uid="uid://dof518c030571" path="res://assets/audios/confirmation_003.ogg" id="5_8ln24"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ekxnf"]
 texture = ExtResource("1_l6cm7")
@@ -33,6 +35,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_bqqt6")
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 1
@@ -97,3 +100,9 @@ theme_override_fonts/font = ExtResource("2_ekxnf")
 theme_override_font_sizes/font_size = 170
 text = "DESSERTS TP1 "
 horizontal_alignment = 1
+
+[node name="Confirmation003" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_8ln24")
+
+[connection signal="pressed" from="VBoxContainer/Jouer" to="." method="_on_jouer_pressed"]
+[connection signal="pressed" from="VBoxContainer/Options" to="." method="_on_options_pressed"]
